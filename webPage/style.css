@@ -1,42 +1,51 @@
+/* hoe groot de letters zijn, welke font het is en hoe groot de margin is van alles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
+    font-family: monospace;
+    font-size: large;
   }
+  /* de achtergrond kleur van de achtergrond */
   body {
     background-color: #790000;
   }
-  .wrapper {
-    background-color: #ffffff;
-    width: 80vmin;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
+/* de box in het midden van het scherm */
+  .wrapper { 
+    background-color: #ffffff; /* achtergron kleur van de box*/
+    width: 80vmin; /* vmin betekend dat het zichzelf aanpast aan de breete en hoogte van je scherm */
+    position: absolute; /* absolute zorgt er voor dat dit locatie voor de rest van de dingen in deze pagina niet veranderd */
+    transform: translate(-50%, -50%); /* zorgt er voor dat hij in het midden staat*/
+    top: 50%; /*de locatie van de box*/
     left: 50%;
     padding: 40px 20px;
-    border-radius: 8px;
+    border-radius: 1px; /*rond de hoekjes af*/
   }
   label {
-    display: block;
+    display: block; /* zorgt er voor dat je wat text ziet*/
   }
-  span {
-    position: relative;
+  /*veranderd de groote van de box */
+  span { 
+    position: relative; 
     font-size: 22px;
     bottom: -1px;
   }
+  /*zorgt er voor dat alles in de box op de goede locatie zit */
   .opt-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     gap: 10px;
   }
+  /*geeft de knopjes een kleur */
   button {
     background-color: #002eb9;
     border: none;
     border-radius: 5px;
     padding: 5px;
+    width: 100px;
   }
+  /*laat de knopjes er iets groter uit zien en wat meer netjes*/
   input[type="color"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -47,10 +56,12 @@
     border: none;
     cursor: pointer;
   }
+  /*geeft een border kleur om de color swatch heen*/
   input[type="color"]::-webkit-color-swatch {
     border-radius: 8px;
     border: 4px solid #000000;
   }
+  /*? */
   input[type="color"]::-moz-color-swatch {
     border-radius: 8px;
     border: 4px solid #000000;
